@@ -9,7 +9,9 @@ public class HumanPlayer implements Player {
     Scanner scanner = new Scanner(System.in);
 
     public long askNextGuess(){
-        return scanner.nextLong();
+        long num = scanner.nextLong();
+        scanner.nextLine();
+        return num;
     }
 
     public void respond(boolean lowerOrGreater) {
